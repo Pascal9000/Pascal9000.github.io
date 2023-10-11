@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>App</title>
+    <script type="module" crossorigin src="/assets/index-cded9e1b.js"></script>
+    <link rel="stylesheet" href="/assets/index-f2f032ba.css">
+  </head>
+  <body>
+    <div id="gameBoard" class="m-auto h-[100vw] w-[100vw] bg-gray-200 md:h-[80vh] md:w-[80vh]"></div>
+    <div class="mt-2 flex justify-center">
+      <div id="playerDisplay" class="font-mono text-3xl">Player: x</div>
+      <div id="result" class="hidden">text</div>
+    </div>
+
+    <template id="mainGameBoardTemplate">
+      <div id="mainGameBoard" class="grid h-full grid-cols-3 grid-rows-3"></div>
+    </template>
+
+    <template id="smallBoardTemplate">
+      <div class="smallBoardWrapper">
+        <div class="smallBoardElement grid h-full grid-cols-3 grid-rows-3 p-2"></div>
+      </div>
+    </template>
+
+    <template id="fieldButtonTemplate">
+      <button></button>
+    </template>
+
+    
+  </body>
+</html>
