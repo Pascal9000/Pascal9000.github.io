@@ -1,18 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
+    <link rel="preload" as="image" href="/assets/cross-5e7936ea.png" />
+    <link rel="preload" as="image" href="/assets/circle-4557edad.png" />
     <title>App</title>
-    <script type="module" crossorigin src="/assets/index-cded9e1b.js"></script>
-    <link rel="stylesheet" href="/assets/index-f2f032ba.css">
+    <script type="module" crossorigin src="/assets/index-f0b9949c.js"></script>
+    <link rel="stylesheet" href="/assets/index-8f40aa60.css" />
   </head>
   <body>
-    <div id="gameBoard" class="m-auto h-[100vw] w-[100vw] bg-gray-200 md:h-[80vh] md:w-[80vh]"></div>
+    <div class="pb-2 pt-1 text-center font-mono text-[7vw] lg:text-[5vh]">
+      Ultimate Tic Tac Toe
+    </div>
+    <div
+      id="gameBoard"
+      class="m-auto h-[100vw] w-[100vw] bg-gray-200 lg:h-[80vh] lg:w-[80vh]"></div>
     <div class="mt-2 flex justify-center">
-      <div id="playerDisplay" class="font-mono text-3xl">Player: x</div>
-      <div id="result" class="hidden">text</div>
+      <div id="playerDisplay" class="font-mono text-[5vh]">Player: x</div>
     </div>
 
     <template id="mainGameBoardTemplate">
@@ -21,14 +27,13 @@
 
     <template id="smallBoardTemplate">
       <div class="smallBoardWrapper">
-        <div class="smallBoardElement grid h-full grid-cols-3 grid-rows-3 p-2"></div>
+        <div
+          class="smallBoardElement grid h-full grid-cols-3 grid-rows-3 p-2"></div>
       </div>
     </template>
 
     <template id="fieldButtonTemplate">
       <button></button>
     </template>
-
-    
   </body>
 </html>
